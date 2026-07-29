@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe Coding Workflow (Heavy/Medium)"
+  short_description: "Doc-driven multi-agent coding for complex projects"
+  default_prompt: "Use the Vibe Coding workflow to turn this idea into requirements, layered design docs, task files, multi-agent implementation, and verification."

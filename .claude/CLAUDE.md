@@ -49,6 +49,22 @@ uv pip install "graphifyy[pdf,chinese]"
 graphify extract ./abstracts --obsidian --obsidian-dir ./knowledge-base
 ```
 
-## Skill 触发
+## 已安装 Skills
 
-- `/paper-kg` — 手动触发完整论文知识图谱构建流程
+### `/paper-kg` — 论文知识图谱构建
+
+手动触发完整论文知识图谱构建流程（Phase 1→2→3）。skill 定义位于 `.claude/skills/paper-kg/`。
+
+### `ponytail` (v4.7.0) — 极简开发模式
+
+"Lazy senior dev" 风格。强制最简单方案：YAGNI 原则、stdlib 优先、不过早抽象。适合快速实现和避免过度工程化。
+
+- 默认 `full` 模式，可通过 `/ponytail lite|full|ultra` 切换强度
+- 关闭：`stop ponytail` 或 `normal mode`
+
+### `vibe-coding-workflow` — 文档驱动开发工作流
+
+适用于中大型 AI 辅助项目。通过 `doc/` 目录管理完整的工程规划：
+`proposal.md` → `high-level-design.md` → `detailed-design.md` → `tasks/*.md` → `prompt.md`
+
+核心流程：需求澄清 → 分层设计 → 任务拆分 → 多 Agent 协调实现 → 验证闭环。适合复杂、多模块项目。
