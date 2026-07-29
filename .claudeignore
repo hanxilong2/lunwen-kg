@@ -1,0 +1,3 @@
+# graphify output — exclude from context caching
+graph.json
+graphify-out/
